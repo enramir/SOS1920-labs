@@ -1,3 +1,3 @@
 # SOS1920-labs
 
-Práctica del laboratorio L04. Introducción a nodeJS. 
+Práctica laboratorio L04. Introducción a NodeJS y Express. 
