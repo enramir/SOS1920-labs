@@ -1,0 +1,72 @@
+    1  cd /workspace/SOS1920-labs; clear
+    2  export LANG=en_US.UTF-8;export LANGUAGE=en_US.UTF-8;locale-gen;source ~/.profile; [ ! -f ~/.custom_env ] || source ~/.custom_env; clear;
+    3  cd /workspace/SOS1920-labs; clear
+    4  clear
+    5  ls
+    6  ls /
+    7  echo "# SOS1920-labs" >> README.md
+    8  git init
+    9  ls -la
+   10  rm -rf main.js
+   11  git status
+   12  ls -a
+   13  git add .
+   14  git commit -m "second commit"
+   15  git config --global user.email "kikeramos9@gmail.com"
+   16  git config --global user.name "enramir"
+   17  git commit -m "second commit"
+   18  git remote add origin https://github.com/enramir/SOS1920-labs.git
+   19  git push -u origin master
+   20  git pull
+   21  git push -u origin master
+   22  git checkout -b l04
+   23  ls
+   24  git checkout master
+   25  ls
+   26  git push -u origin master
+   27  git pull
+   28  git pull https://github.com/enramir/SOS1920-labs.git master
+   29  git pull origin master
+   30  git fetch --all
+   31  git reset --soft origin/master
+   32  git add --all
+   33  git status
+   34  git push -u origin master
+   35  git add .
+   36  git commit -m "second commit"
+   37  git push 
+   38  git checkout -b l04
+   39  git checkout l04
+   40* git push -
+   41  git push -u origin l04
+   42  ls
+   43  git init
+   44  ls
+   45  npm init
+   46  ls
+   47  nano README.md 
+   48  apt-get install nano
+   49  nano README.md 
+   50  touch index.js
+   51  npm start
+   52  git checkout master
+   53  ls
+   54  cat README.md 
+   55  git checkout L04
+   56  git checkout l04
+   57  ls
+   58  npm install cool-ascii-faces --save
+   59  npm start
+   60  git checkout master
+   61  ls
+   62  git checkout l04
+   63  touch .gitignore
+   64  git add .
+   65  git status
+   66  git commit -m "created gitignore and index.js"
+   67  git push
+   68  ls
+   69  npm install express --save
+   70  npm start
+   71  history
+   72  history > history.txt
