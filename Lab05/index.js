@@ -3,13 +3,15 @@ const express = require("express");
 
 var app = express();
 
+var port = process.env.PORT || 8080
+
 app.use("/", express.static("./public"));
 
 app.get("/cool",(request,response) => {
 	response.send("<html>"+cool()+"</html>");
 });
 
-app.listen(8080, () => {
+app.listen(port, () => {
 	console.log("server ready");
 });
 
