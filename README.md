@@ -1,3 +1,3 @@
 # SOS1920-labs
 
-Prรกctica laboratorio L06. Backend II.
+Práctica laboratorio L06. Backend II.
