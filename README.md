@@ -1,5 +1,5 @@
 # SOS1920-labs
 
-Práctica Lab08. Persistencia.
+Práctica Lab08. Persistencia en NeDB.
 
 
