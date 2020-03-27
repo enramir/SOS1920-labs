@@ -1,5 +1,5 @@
 # SOS1920-labs
 
-Práctica Lab08. Persistencia en NeDB.
+Laboratory practices of the subject of Service-Oriented Systems divided into different branches.
 
 
