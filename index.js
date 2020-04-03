@@ -1,17 +1,17 @@
+const cool = require("cool-ascii-faces");
 const express = require("express");
-const bodyParser = require("body-parser"); 
-const path = require("path");
-const contactAPI = require(path.join(__dirname,"contactAPI"));
-							
-const port = process.env.PORT || 80;
 
-const app = express();
-app.use(bodyParser.json());
+var app = express();
 
-contactAPI(app);
+var port = process.env.PORT || 8080;
 
+app.use("/",express.static("./public"));
+
+app.get("/cool",(request,response) => {
+	response.send("<html>"+cool()+"</html>");
+});
 app.listen(port, () => {
-	console.log("Server ready");
+	console.log("Server ready on port " + port);
 });
 
 console.log("Starting server...");
