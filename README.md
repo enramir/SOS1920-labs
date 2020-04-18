@@ -1,8 +1,7 @@
 # SOS1920-labs
 
 
-Laboratory practice l10, where we begin to build the front-end part with the javaScript framework SvelteJS. 
-With our back-end in NodeJS done in previous practices.
+Laboratory practice l10, we continue making a contacts application with svelte (frontend) consuming a simplified API in the backend.
 
 First of all you have to do 
 - npm install
