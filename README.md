@@ -1,7 +1,7 @@
 # SOS1920-labs
 
 
-Laboratory practice l09, where we begin to build the front-end part with the javaScript framework SvelteJS. 
+Laboratory practice l10, where we begin to build the front-end part with the javaScript framework SvelteJS. 
 With our back-end in NodeJS done in previous practices.
 
 First of all you have to do 
