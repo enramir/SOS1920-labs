@@ -1,6 +1,8 @@
 <script>
 
-	import { onMount } from "svelte";
+	import { 
+		onMount 
+	} from "svelte";
 	import Table from "sveltestrap/src/Table.svelte";
 	import Button from "sveltestrap/src/Button.svelte";
 	
@@ -30,7 +32,7 @@
 
 	async function insertContact(){
 		
-		console.log("Inserting contact...");
+		console.log("Inserting contact..." + JSON.stringify(newContact));
 
 		const res = await fetch("/api/v1/contacts", {
 			method: "POST",
@@ -38,6 +40,18 @@
 			headers: {
 				"Content-Type": "application/json"
 			}
+		}).then(function (res) {
+			getContacts();
+		});
+
+	}
+
+	async function deleteContact(name){
+		
+		console.log("Deleting contact...");
+
+		const res = await fetch("/api/v1/contacts/" + name, {
+			method: "DELETE",
 		}).then(function (res) {
 			getContacts();
 		});
@@ -70,10 +84,12 @@
 
 				{#each contacts as contact}
 					<tr>
-						<td>{contact.name}</td>
+						<td>
+							<a href="#/contact/{contact.name}">{contact.name}</a>
+						</td>
 						<td>{contact.email}</td>
 						<td>{contact.phone}</td>
-						<td><Button outline color="danger">Delete</Button></td>
+						<td><Button outline color="danger" on:click="{deleteContact(contact.name)}">Delete</Button></td>
 					</tr>
 				{/each}
 			</tbody>

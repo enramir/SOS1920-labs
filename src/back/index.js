@@ -31,7 +31,8 @@ const db = new dataStore({
                 if (err){
                     res.sendStatus(500);
                 }else{ 
-                    setTimeout(function(){ res.send(contacts); }, 2000);
+                    //setTimeout(function(){ res.send(contacts); }, 2000);
+                    res.send(contacts);
                 }
             })
         });

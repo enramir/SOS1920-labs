@@ -1,7 +1,7 @@
 # SOS1920-labs
 
 
-Laboratory practice l10, we continue making a contacts application with svelte (frontend) consuming a simplified API in the backend.
+Laboratory practice l11, Frontend (III) GUI in Svelte.
 
 First of all you have to do 
 - npm install
